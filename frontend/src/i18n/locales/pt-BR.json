@@ -1,0 +1,61 @@
+{
+  "common": {
+    "loading": "Carregando...",
+    "error": "Erro",
+    "success": "Sucesso",
+    "return_home": "Voltar para Início",
+    "cancel": "Cancelar",
+    "close": "Fechar",
+    "back": "Voltar",
+    "next": "Próximo",
+    "characters": "caracteres"
+  },
+  "auth": {
+    "sign_in": "Entrar",
+    "login_success": "Login realizado com sucesso!",
+    "login_failed": "Falha no login",
+    "login_verifying": "Verificando seu login...",
+    "redirecting": "Redirecionando para criar seu anúncio...",
+    "invalid_token": "Link inválido ou expirado",
+    "no_token": "Token não fornecido",
+    "enter_email": "Digite seu email",
+    "magic_link_sent": "Link mágico enviado! Verifique seu email.",
+    "magic_link_error": "Falha ao enviar link mágico",
+    "check_email": "Por favor, verifique seu email e clique no link de login para continuar. Se não encontrar, verifique a pasta de spam."
+  },
+  "ads": {
+    "create_ad": "Criar Anúncio",
+    "choose_vehicle": "Escolha o Tipo de Veículo",
+    "enter_message": "Digite a Mensagem",
+    "set_duration": "Defina a Duração",
+    "max_ads_reached": "Limite máximo de anúncios ({{max}}) atingido",
+    "message_placeholder": "Digite sua mensagem... (máximo 240 caracteres)",
+    "details": "Detalhes do Anúncio",
+    "message": "Mensagem do Anúncio",
+    "vehicle_types": {
+      "airplane": "Avião",
+      "balloon": "Balão",
+      "airship": "Dirigível"
+    },
+    "durations": {
+      "1d": "1 Dia (R$ 4,99)",
+      "1w": "1 Semana (R$ 18,99)",
+      "1m": "1 Mês (R$ 29,99)"
+    },
+    "terms_notice": "Ao criar um anúncio, você concorda com nossos <1>Termos de Uso e Privacidade</1>.",
+    "add_new_ad": "Criar novo anúncio"
+  },
+  "payment": {
+    "success": "Pagamento Realizado com Sucesso!",
+    "success_message": "Seu anúncio será exibido no céu em breve.",
+    "canceled": "Pagamento Cancelado",
+    "cancel_message": "Seu anúncio não foi criado. Você pode tentar novamente quando quiser.",
+    "processing": "Processando pagamento...",
+    "product_name": "MOderated aDS - {{duration}}",
+    "checkout_error": "Falha ao criar sessão de pagamento",
+    "ad_not_found": "Anúncio não encontrado",
+    "update_error": "Erro ao atualizar status do anúncio",
+    "webhook_error": "Erro no Webhook: {{message}}",
+    "confirmation_email": "<h1>MOderated aDS - Confirmação de Pagamento</h1><p>Obrigado pela sua compra! Seu anúncio está ativo.</p><p>ID do Anúncio: {{adId}}</p><p>Email: {{email}}</p>"
+  }
+} 

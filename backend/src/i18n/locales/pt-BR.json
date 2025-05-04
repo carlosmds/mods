@@ -1,0 +1,45 @@
+{
+  "auth": {
+    "magic_link_subject": "Seu Link de Login do MOderated aDS",
+    "magic_link_text": "Bem-vindo ao MOderated aDS! Clique neste link para fazer login: {{link}} (válido por 15 minutos)",
+    "magic_link_html": "<h2>Bem-vindo ao MOderated aDS!</h2><p>Clique no botão abaixo para fazer login (válido por 15 minutos):</p><p><a href=\"{{link}}\" style=\"background-color: #4CAF50; color: white; padding: 14px 20px; text-decoration: none; border-radius: 4px; display: inline-block;\">Entrar no MOderated aDS</a></p><p>Ou copie e cole este link no seu navegador:</p><p>{{link}}</p><p>Se você não solicitou este link de login, pode ignorar este e-mail com segurança.</p>",
+    "magic_link_sent": "Link mágico enviado com sucesso",
+    "magic_link_error": "Falha ao enviar link mágico",
+    "invalid_token": "Token inválido ou expirado",
+    "token_expired": "Sua sessão expirou. Por favor, faça login novamente.",
+    "verify_error": "Falha ao verificar link mágico",
+    "no_token": "Nenhum token de autenticação fornecido"
+  },
+  "ads": {
+    "missing_fields": "Campos obrigatórios ausentes",
+    "invalid_duration": "Formato de duração inválido",
+    "max_limit": "Limite máximo de anúncios atingido",
+    "create_error": "Falha ao criar anúncio",
+    "fetch_error": "Falha ao buscar anúncios ativos",
+    "durations": {
+      "1d": "1 Dia",
+      "1w": "1 Semana",
+      "1m": "1 Mês"
+    }
+  },
+  "payment": {
+    "product_name": "MOderated aDS - {{duration}}",
+    "ad_not_found": "Anúncio não encontrado",
+    "checkout_error": "Falha ao criar sessão de checkout",
+    "update_error": "Erro ao atualizar status do anúncio",
+    "webhook_error": "Erro no Webhook: {{message}}",
+    "success": "Pagamento Bem-sucedido",
+    "confirmation_email": "<h2>Pagamento Confirmado!</h2><p>Obrigado pelo seu pagamento. Seu anúncio do MOderated aDS (ID: {{adId}}) foi processado com sucesso.</p><p>Por favor, note que pode levar até 30 minutos para seu anúncio aparecer no céu devido ao nosso sistema de cache. Este atraso nos ajuda a manter o desempenho ideal e garantir uma experiência suave para todos os usuários.</p><p>Se você tiver alguma dúvida ou se seu anúncio não aparecer após 30 minutos, entre em contato conosco em {{email}}.</p>"
+  },
+  "moderation": {
+    "rejected_subject": "Seu Anúncio do MOderated aDS Foi Removido",
+    "rejected_email": "<h2>Aviso de Moderação de Conteúdo</h2><p>Seu anúncio do MOderated aDS (ID: {{adId}}) foi removido devido a conteúdo inadequado.</p><p>Pontuação de Conteúdo: {{score}}/10</p><p>Motivo: {{reason}}</p><p>Se você acredita que isso é um erro, entre em contato conosco em {{email}}.</p>"
+  },
+  "validation": {
+    "error": "Erro de validação: {{details}}"
+  },
+  "errors": {
+    "server_error": "Ocorreu um erro inesperado. Por favor, tente novamente mais tarde.",
+    "resource_not_found": "O recurso solicitado não foi encontrado."
+  }
+} 

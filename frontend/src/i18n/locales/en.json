@@ -1,0 +1,76 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "return_home": "Return to Home",
+    "cancel": "Cancel",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "characters": "characters"
+  },
+  "auth": {
+    "sign_in": "Sign In",
+    "login_success": "Successfully Logged In!",
+    "login_failed": "Login Failed",
+    "login_verifying": "Verifying your login...",
+    "redirecting": "Redirecting you to create your ad...",
+    "invalid_token": "Invalid or expired login link",
+    "no_token": "No token provided",
+    "enter_email": "Enter your email",
+    "magic_link_subject": "Your MOderated aDS Login Link",
+    "magic_link_text": "Welcome to MOderated aDS! Click this link to log in: {{link}} (valid for 15 minutes)",
+    "magic_link_html": "<h2>Welcome to MOderated aDS!</h2><p>Click the button below to log in (valid for 15 minutes):</p><p><a href=\"{{link}}\" style=\"background-color: #4CAF50; color: white; padding: 14px 20px; text-decoration: none; border-radius: 4px; display: inline-block;\">Log In to MOderated aDS</a></p><p>Or copy and paste this link in your browser:</p><p>{{link}}</p><p>If you didn't request this login link, you can safely ignore this email.</p>",
+    "magic_link_sent": "Magic link sent successfully",
+    "magic_link_error": "Failed to send magic link",
+    "check_email": "Please check your email and click the login link to continue. If you don't see it, check your spam folder.",
+    "verify_error": "Failed to verify magic link"
+  },
+  "ads": {
+    "create_ad": "Create Ad",
+    "choose_vehicle": "Choose Vehicle Type",
+    "enter_message": "Enter Message",
+    "set_duration": "Set Duration",
+    "max_ads_reached": "Maximum ads ({{max}}) reached",
+    "message_placeholder": "Enter your message... (max 240 characters)",
+    "details": "Ad Details",
+    "message": "Ad Message",
+    "vehicle_types": {
+      "airplane": "Airplane",
+      "balloon": "Balloon",
+      "airship": "Airship"
+    },
+    "durations": {
+      "1d": "1 Day (R$ 4.99)",
+      "1w": "1 Week (R$ 18.99)",
+      "1m": "1 Month (R$ 29.99)",
+      "3m": "3 Months"
+    },
+    "missing_fields": "Missing required fields",
+    "invalid_duration": "Invalid duration format",
+    "max_limit": "Maximum ad limit reached",
+    "create_error": "Failed to create ad",
+    "fetch_error": "Failed to fetch active ads",
+    "add_new_ad": "Add New Ad"
+  },
+  "payment": {
+    "success": "Payment Successful",
+    "success_message": "Your ad will be displayed in the sky shortly.",
+    "canceled": "Payment Cancelled",
+    "cancel_message": "Your ad has not been created. You can try again when you're ready.",
+    "processing": "Processing payment...",
+    "product_name": "MOderated aDS - {{duration}}",
+    "checkout_error": "Failed to create checkout session",
+    "ad_not_found": "Ad not found",
+    "update_error": "Error updating ad status",
+    "webhook_error": "Webhook Error: {{message}}",
+    "confirmation_email": "<h2>Payment Confirmed!</h2><p>Thank you for your payment. Your MOderated aDS ad (ID: {{adId}}) is now active and will be displayed to users.</p><p>If you have any questions, please contact us at {{email}}.</p>"
+  },
+  "moderation": {
+    "rejected_subject": "Your MOderated aDS Ad Has Been Removed",
+    "rejected_email": "<h2>Content Moderation Notice</h2><p>Your MOderated aDS ad (ID: {{adId}}) has been removed due to inappropriate content.</p><p>Content Score: {{score}}/10</p><p>Reason: {{reason}}</p><p>If you believe this is a mistake, please contact us at {{email}}.</p>"
+  },
+  "terms_notice": "By creating an ad, you agree to our <1>Terms of Use and Privacy Policy</1>.",
+  "add_new_ad": "Add New Ad"
+} 

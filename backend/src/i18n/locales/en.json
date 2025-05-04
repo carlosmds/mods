@@ -1,0 +1,45 @@
+{
+  "auth": {
+    "magic_link_subject": "Your MOderated aDS Login Link",
+    "magic_link_text": "Welcome to MOderated aDS! Click this link to log in: {{link}} (valid for 15 minutes)",
+    "magic_link_html": "<h2>Welcome to MOderated aDS!</h2><p>Click the button below to log in (valid for 15 minutes):</p><p><a href=\"{{link}}\" style=\"background-color: #4CAF50; color: white; padding: 14px 20px; text-decoration: none; border-radius: 4px; display: inline-block;\">Log In to MOderated aDS</a></p><p>Or copy and paste this link in your browser:</p><p>{{link}}</p><p>If you didn't request this login link, you can safely ignore this email.</p>",
+    "magic_link_sent": "Magic link sent successfully",
+    "magic_link_error": "Failed to send magic link",
+    "invalid_token": "Invalid or expired token",
+    "token_expired": "Your session has expired. Please log in again.",
+    "verify_error": "Failed to verify magic link",
+    "no_token": "No authentication token provided"
+  },
+  "ads": {
+    "missing_fields": "Missing required fields",
+    "invalid_duration": "Invalid duration format",
+    "max_limit": "Maximum ad limit reached",
+    "create_error": "Failed to create ad",
+    "fetch_error": "Failed to fetch active ads",
+    "durations": {
+      "1d": "1 Day",
+      "1w": "1 Week",
+      "1m": "1 Month"
+    }
+  },
+  "payment": {
+    "product_name": "MOderated aDS - {{duration}}",
+    "ad_not_found": "Ad not found",
+    "checkout_error": "Failed to create checkout session",
+    "update_error": "Error updating ad status",
+    "webhook_error": "Webhook Error: {{message}}",
+    "success": "Payment Successful",
+    "confirmation_email": "<h2>Payment Confirmed!</h2><p>Thank you for your payment. Your MOderated aDS ad (ID: {{adId}}) has been successfully processed.</p><p>Please note that it may take up to 30 minutes for your ad to appear in the sky due to our caching system. This delay helps us maintain optimal performance and ensure a smooth experience for all users.</p><p>If you have any questions or if your ad doesn't appear after 30 minutes, please contact us at {{email}}.</p>"
+  },
+  "moderation": {
+    "rejected_subject": "Your MOderated aDS Ad Has Been Removed",
+    "rejected_email": "<h2>Content Moderation Notice</h2><p>Your MOderated aDS ad (ID: {{adId}}) has been removed due to inappropriate content.</p><p>Content Score: {{score}}/10</p><p>Reason: {{reason}}</p><p>If you believe this is a mistake, please contact us at {{email}}.</p>"
+  },
+  "validation": {
+    "error": "Validation error: {{details}}"
+  },
+  "errors": {
+    "server_error": "An unexpected error occurred. Please try again later.",
+    "resource_not_found": "The requested resource was not found."
+  }
+} 
