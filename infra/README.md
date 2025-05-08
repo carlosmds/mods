@@ -67,7 +67,7 @@ This directory contains the infrastructure code for the MOderated aDS platform, 
    project_name          = "mods"
    environment           = "dev"
    encryption_key        = "TSo3H9ztcKIFCq1fFYzzdNXYxxJ62GowF/AacZ4ml6o=" # openssl rand -base64 32
-   aws_local             = true
+   aws_local             = false
    aws_region            = "us-east-1"
    jwt_secret            = "4sv3sq+rIT0uoLZnLKKnBwYELP4g6r3055AJEGTli7M=" # openssl rand -base64 32
    mailjet_api_key       = "mailjet_api_key"

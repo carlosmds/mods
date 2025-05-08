@@ -14,13 +14,15 @@ This is the backend API for the MOderated aDS platform. It manages ad data, auth
 ```
 backend/
 ├── src/
-│   ├── routes/          # API endpoints (ads, payments, auth)
-│   ├── middleware/      # Express middleware (auth, validation, error handling)
-│   ├── i18n/           # Localization files
-│   ├── utils/          # Utility functions
-│   ├── constants.js    # Application constants
-│   └── index.js        # App entry point
-├── Dockerfile
+│   ├── routes/                   # API endpoints (ads, payments, auth)
+│   ├── middleware/               # Express middleware (auth, validation, error handling)
+│   ├── i18n/                     # Localization files
+│   ├── utils/                    # Utility functions
+│   ├── lambda/                   # Other Lambda functions independent of API routes
+│   │   └── content-moderation.js # AWS Lambda function for content moderation
+│   ├── constants.js              # Application constants
+│   └── index.js                  # API entrypoint for local development and custom deployments 
+│   └── lambda.js                 # API entrypoint for AWS API Gateway REST API with Lambda
 └── package.json
 ```
 
@@ -31,10 +33,9 @@ backend/
    ```
 2. Create a `.env` file in `backend/`:
    ```env
-   PORT=3001
+   PORT=3000
    FRONTEND_URL=http://localhost:5173
    AWS_LOCAL=true
-   LOCALSTACK_HOSTNAME=localhost
    ```
 
 3. Start the server:

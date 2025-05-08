@@ -47,20 +47,7 @@ npm run dev
 
 ### 4. Infrastructure (optional, for cloud deploy)
 
-Requirements
-```bash
-brew install localstack opentofu terraform 
-
-localstack start
-```
-
-Terraform
-```bash
-cd terraform
-cp terraform.tfvars.example terraform.tfvars
-# update your terraform.tfvars, then:
-tofu apply
-```
+See [Infrastructure README](./infra/README.md)
 
 ## Directory Structure
 ```
@@ -68,8 +55,6 @@ mods/
 ├── backend/      # Node.js/Express API
 ├── frontend/     # React SPA
 ├── terraform/    # Infrastructure as code
-├── localstack/   # Local AWS emulation (optional)
-├── docker-compose.yml
 └── README.md     # (this file)
 ```
 
