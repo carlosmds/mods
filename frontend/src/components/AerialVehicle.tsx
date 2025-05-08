@@ -51,15 +51,27 @@ const estimateLineCount = (text: string, width: number, fontSize: number, fontFa
   return Math.max(1, Math.ceil(text.length / charsPerLine));
 };
 
+// Helper to calculate banner dimensions
+const getBannerDimensions = (
+  text: string,
+  scale: number,
+  bannerWidth: number,
+  fontFamily: string,
+  padding: number,
+  minLines: number = 2
+) => {
+  const fontSize = 14 * scale;
+  const minHeight = fontSize * 1.2 * minLines + padding;
+  const lineCount = estimateLineCount(text, bannerWidth, fontSize, fontFamily);
+  const height = Math.max(minHeight, fontSize * 1.2 * lineCount + padding);
+  return { fontSize, minLines, padding, minHeight, lineCount, height };
+};
+
 // LED Display Component
 const LEDDisplay: React.FC<{ text: string; scale: number; bannerWidth: number }> = ({ text, scale, bannerWidth }) => {
-  const fontSize = 14 * scale;
-  const minLines = 2;
-  const padding = 10 * scale;
-  const minHeight = fontSize * 1.2 * minLines + padding;
-  // Estimate lines for this width
-  const lineCount = estimateLineCount(text, bannerWidth, fontSize, 'monospace');
-  const height = Math.max(minHeight, fontSize * 1.2 * lineCount + padding);
+  const fontFamily = 'monospace';
+  const padding = 5;
+  const { fontSize, height } = getBannerDimensions(text, scale, bannerWidth, fontFamily, padding);
   return (
     <Group 
       x={-bannerWidth - 10 * scale}
@@ -76,12 +88,12 @@ const LEDDisplay: React.FC<{ text: string; scale: number; bannerWidth: number }>
         width={bannerWidth}
         height={height}
         fontSize={fontSize}
-        fontFamily="monospace"
+        fontFamily={fontFamily}
         fill="#FFD700"
         align="center"
         verticalAlign="middle"
         wrap="word"
-        padding={5}
+        padding={padding}
       />
     </Group>
   );
@@ -89,12 +101,9 @@ const LEDDisplay: React.FC<{ text: string; scale: number; bannerWidth: number }>
 
 // Smoke Writing Component
 const SmokeWriting: React.FC<{ text: string; scale: number; bannerWidth: number }> = ({ text, scale, bannerWidth }) => {
-  const fontSize = 14 * scale;
-  const minLines = 2;
-  const padding = 10 * scale;
-  const minHeight = fontSize * 1.2 * minLines + padding;
-  const lineCount = estimateLineCount(text, bannerWidth, fontSize, 'sans-serif');
-  const height = Math.max(minHeight, fontSize * 1.2 * lineCount + padding);
+  const fontFamily = 'sans-serif';
+  const padding = 5;
+  const { fontSize, height } = getBannerDimensions(text, scale, bannerWidth, fontFamily, padding);
   return (
     <Group 
       x={-bannerWidth - 10 * scale}
@@ -106,12 +115,12 @@ const SmokeWriting: React.FC<{ text: string; scale: number; bannerWidth: number 
         height={height}
         fontSize={fontSize}
         fontStyle="bold"
-        fontFamily="sans-serif"
+        fontFamily={fontFamily}
         fill="#FFFFFF"
         align="center"
         verticalAlign="middle"
         wrap="word"
-        padding={5}
+        padding={padding}
         shadowColor="#CCCCCC"
         shadowBlur={10}
         shadowOpacity={0.8}
@@ -123,12 +132,9 @@ const SmokeWriting: React.FC<{ text: string; scale: number; bannerWidth: number 
 
 // Banner Component
 const BannerDisplay: React.FC<{ text: string; scale: number; bannerWidth: number }> = ({ text, scale, bannerWidth }) => {
-  const fontSize = 14 * scale;
-  const minLines = 2;
-  const padding = 10 * scale;
-  const minHeight = fontSize * 1.2 * minLines + padding;
-  const lineCount = estimateLineCount(text, bannerWidth, fontSize, 'sans-serif');
-  const height = Math.max(minHeight, fontSize * 1.2 * lineCount + padding);
+  const fontFamily = 'sans-serif';
+  const padding = 5;
+  const { fontSize, height } = getBannerDimensions(text, scale, bannerWidth, fontFamily, padding);
   return (
     <Group 
       x={-bannerWidth - 10 * scale}
@@ -166,12 +172,12 @@ const BannerDisplay: React.FC<{ text: string; scale: number; bannerWidth: number
         height={height}
         fontSize={fontSize}
         fontStyle="bold"
-        fontFamily="sans-serif"
+        fontFamily={fontFamily}
         fill="#000000"
         align="center"
         verticalAlign="middle"
         wrap="word"
-        padding={8}
+        padding={padding}
       />
     </Group>
   );
