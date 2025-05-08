@@ -1,7 +1,6 @@
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { loadStripe } from '@stripe/stripe-js';
-import { useTranslation } from 'react-i18next';
 
 export type AdDuration = '1d' | '1w' | '1m';
 
@@ -134,7 +133,7 @@ const adsSlice = createSlice({
         state.loading = true;
         state.error = null;
       })
-      .addCase(createAd.fulfilled, (state, action) => {
+      .addCase(createAd.fulfilled, (state) => {
         state.loading = false;
         // Don't add the ad to the list since it's not active yet
         state.error = null;

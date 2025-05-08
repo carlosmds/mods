@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useMemo } from 'react';
-import { Stage, Layer, Text, Circle, Group, Line } from 'react-konva';
+import React, { useRef, useMemo } from 'react';
+import { Stage, Layer, Text, Circle, Group } from 'react-konva';
 import { useSelector } from 'react-redux';
 import { RootState } from '../store';
 import AerialVehicle from './AerialVehicle';
@@ -8,7 +8,7 @@ import RainParticle from './RainParticle';
 import SnowParticle from './SnowParticle';
 import Terrain from './Terrain';
 import { Ad } from '../store/slices/adsSlice';
-import { TimeOfDay, Weather, Season, UIState } from '../store/slices/uiSlice';
+import { TimeOfDay, Weather, UIState } from '../store/slices/uiSlice';
 
 interface SkySceneProps {
   width: number;
