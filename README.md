@@ -17,12 +17,6 @@ A modern web platform for creating and managing aerial advertisements in a dynam
 
 ## Quickstart
 
-### Prerequisites
-- Node.js (v18+ recommended)
-- npm or yarn
-- Docker (for local dev, optional)
-- Terraform (for infra)
-
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/carlosmds/mods
@@ -30,31 +24,23 @@ cd mods
 ```
 
 ### 2. Setup Frontend
-```bash
-cd frontend
-npm install
-npm run dev
-# Visit http://localhost:5173
-```
+
+See [Frontend README](./frontend/README.md) for more instructions. The frontend depends on [Backend](./infra/README.md) to work properly.
 
 ### 3. Setup Backend
-```bash
-cd backend
-npm install
-npm run dev
-# Backend runs on http://localhost:3001 (default)
-```
 
-### 4. Infrastructure (optional, for cloud deploy)
+See [Backend README](./backend/README.md) for more instructions. The backend depends on [Infrastructure](./infra/README.md) to work properly.
 
-See [Infrastructure README](./infra/README.md)
+### 4. Infrastructure
+
+See [Infrastructure README](./infra/README.md) for more instructions.
 
 ## Directory Structure
 ```
 mods/
 ├── backend/      # Node.js/Express API
 ├── frontend/     # React SPA
-├── terraform/    # Infrastructure as code
+├── infra/        # Infrastructure as code
 └── README.md     # (this file)
 ```
 
